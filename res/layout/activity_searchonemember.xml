@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:iconifiedByDefault="false"
+        android:queryHint="@string/sonemember_queryhint"
+        android:background="@drawable/layoutbottomshadowbackground"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+
+    </SearchView>
+
+    <ScrollView
+		android:layout_width="match_parent"  
+		android:layout_height="match_parent"  
+		android:scrollbars="vertical"  
+		android:fadingEdge="vertical"
+	    android:scrollbarStyle="outsideOverlay"
+		android:padding="5dp"
+		android:layout_margin="5dp" >
+		
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:padding="5dp" >
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/sonemember_memberinfo"
+		        android:textSize="16sp"
+		        android:textStyle="bold"
+		        android:padding="3dp"
+		        android:layout_marginBottom="5dp"
+		        android:textColor="#00AADD"
+		        android:background="@drawable/layoutbottomborderbackground" />
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:paddingLeft="10dp"
+		        android:paddingBottom="10dp" >
+			    <TextView
+			        android:id="@+id/member_no"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/sonemember_no"
+			        android:textSize="16sp"
+			        android:padding="8dp"
+			        android:textColor="#666666" />
+			    <TextView
+			        android:id="@+id/member_name"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/sonemember_name"
+			        android:textSize="16sp"
+			        android:padding="8dp"
+			        android:textColor="#666666" />
+			    <TextView
+			        android:id="@+id/member_sex"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/sonemember_sex"
+			        android:textSize="16sp"
+			        android:padding="8dp"
+			        android:textColor="#666666" />
+			    <TextView
+			        android:id="@+id/member_mobile"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/sonemember_mobile"
+			        android:textSize="16sp"
+			        android:padding="8dp"
+			        android:textColor="#666666" />
+
+			    <TextView
+			        android:id="@+id/member_join"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/sonemember_joinday"
+			        android:textSize="16sp"
+			        android:padding="8dp"
+			        android:textColor="#666666" />
+			    <TextView
+			        android:id="@+id/member_over"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/sonemember_money"
+			        android:textSize="16sp"
+			        android:padding="8dp"
+			        android:textColor="#666666" />
+
+			    <TextView
+			        android:id="@+id/member_rate"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:padding="8dp"
+			        android:text="@string/sonemember_rate"
+			        android:textColor="#666666"
+			        android:textSize="16sp" />
+
+			    <TextView
+			        android:id="@+id/member_status"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:padding="8dp"
+			        android:text="@string/sonemember_status"
+			        android:textColor="#666666"
+			        android:textSize="16sp" />
+			    			    			    			    			    			    			    
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

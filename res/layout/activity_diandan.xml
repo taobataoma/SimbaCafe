@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layoutbottomshadowbackground"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView_tableno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/diandan_tableno"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_mincons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/diandan_percons"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/select_listview_finallist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp" >
+        </ListView>
+
+    </LinearLayout>
+	
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/layouttopborderbackground"
+        android:baselineAligned="true"
+        android:padding="10dp"
+        android:gravity="right" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diandan_label_total"
+            android:textColor="#0000FF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/diandan_total"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="#FF0000"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            android:layout_marginRight="3dp"
+            android:gravity="right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_unit_money"
+            android:textColor="#FF0000"
+            android:textSize="16sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="3dp"
+        android:gravity="center" >
+
+ 	    <Button
+ 	        android:id="@+id/button_add"
+ 	        style="?android:attr/actionButtonStyle"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="45dp"
+ 	        android:layout_marginRight="2dp"
+ 	        android:layout_weight="1"
+ 	        android:background="@drawable/publicbuttonbackground"
+ 	        android:drawableLeft="@drawable/add"
+ 	        android:onClick="DoAddItemToMenuList"
+ 	        android:text="@string/diandan_button_add"
+ 	        android:textSize="16sp" />
+		
+		<Button
+		    android:id="@+id/button_commit"
+		    style="?android:attr/actionButtonStyle"
+		    android:layout_width="wrap_content"
+		    android:layout_height="45dp"
+		    android:layout_weight="1"
+		    android:text="@string/diandan_button_commit"
+		    android:textSize="16sp"
+		    android:drawableLeft="@drawable/commit"
+		    android:layout_marginLeft="2dp"
+		    android:onClick="ReadyCommitMenu"
+		    android:background="@drawable/publicbuttonbackground" />
+  	        
+    </LinearLayout>
+
+</LinearLayout>

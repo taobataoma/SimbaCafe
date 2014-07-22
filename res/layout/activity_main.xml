@@ -1,0 +1,402 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout_Main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/string_simba_logo"
+            android:drawableTop="@drawable/f41"
+            android:onClick="DoMainFunction"
+            android:text="@string/string_com_1" />
+
+        <Button
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/string_simba_logo"
+            android:drawableTop="@drawable/f21"
+            android:onClick="DoMainFunction"
+            android:text="@string/string_com_2" />
+        
+        <Button
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/string_simba_logo"
+            android:drawableTop="@drawable/f11"
+            android:onClick="DoMainFunction"
+            android:text="@string/string_com_3" />
+        
+        <Button
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/string_simba_logo"
+            android:drawableTop="@drawable/f31"
+            android:onClick="DoMainFunction"
+            android:text="@string/string_com_4" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/string_simba_logo"
+            android:drawableTop="@drawable/f51"
+            android:onClick="DoMainFunction"
+            android:text="@string/string_com_5" />
+
+        <Button
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/string_simba_logo"
+            android:drawableTop="@drawable/f61"
+            android:onClick="DoMainFunction"
+            android:text="@string/string_com_6" />
+        
+        <Button
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/string_simba_logo"
+            android:drawableTop="@drawable/f71"
+            android:onClick="DoMainFunction"
+            android:text="@string/string_com_7" />
+
+        <Button
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/string_simba_logo"
+            android:drawableTop="@drawable/f81"
+            android:onClick="DoMainFunction"
+            android:text="@string/string_com_8" />
+
+    </LinearLayout>
+    
+    <ScrollView  
+		android:layout_width="match_parent"  
+		android:layout_height="match_parent"  
+		android:scrollbars="vertical"  
+		android:fadingEdge="vertical"
+	    android:scrollbarStyle="outsideOverlay"
+		android:padding="10dp"
+		android:layout_margin="10dp"
+		android:background="@drawable/layoutbackground">
+    
+	    <LinearLayout
+	        android:id="@+id/linearLayout3"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="top"
+	        android:orientation="vertical" >
+			
+			<RelativeLayout
+	            android:id="@+id/main_fun_button3"
+	            android:layout_width="match_parent"
+	            android:layout_height="63dp"
+	            android:clickable="true"
+	            android:gravity="center_vertical"
+	            android:onClick="funLayoutClick"
+	            android:tag="0"
+	        	android:background="@drawable/layoutfirstitembackground" >
+
+	            <TextView
+	                android:id="@+id/tvEditpass3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000"
+	                android:textSize="16sp"
+	                android:paddingTop="10dp"
+	                android:paddingLeft="5dp"
+	                android:text="@string/string_curr_tablestatus"/>
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#999999"
+	                android:layout_below="@id/tvEditpass3"
+	                android:paddingTop="5dp"
+	                android:paddingLeft="5dp"
+	                android:text="@string/string_curr_tablestatus_hint"/>
+	            
+	            <ImageView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_alignParentRight="true"
+	                android:contentDescription="@string/string_simba_logo"
+	                android:src="@drawable/go11"/>
+	        </RelativeLayout>
+	        	        
+	        <RelativeLayout
+	            android:id="@+id/main_fun_button1"
+	            android:layout_width="match_parent"
+	            android:layout_height="63dp"
+	            android:clickable="true"
+	            android:gravity="center_vertical"
+	            android:onClick="funLayoutClick"
+	            android:tag="1"
+	        	android:background="@drawable/layoutitembackground" >
+
+	            <TextView
+	                android:id="@+id/tvEditpass1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000"
+	                android:textSize="16sp"
+	                android:paddingTop="10dp"
+	                android:paddingLeft="5dp"
+	                android:text="@string/string_edit_pass"/>
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#999999"
+	                android:layout_below="@id/tvEditpass1"
+	                android:paddingTop="5dp"
+	                android:paddingLeft="5dp"
+	                android:text="@string/string_edit_pass_hint"/>
+	            
+	            <ImageView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_alignParentRight="true"
+	                android:contentDescription="@string/string_simba_logo"
+	                android:src="@drawable/go11"/>
+	        </RelativeLayout>
+	        
+	        <RelativeLayout
+	            android:id="@+id/main_fun_button2"
+	            android:layout_width="match_parent"
+	            android:layout_height="63dp"
+	            android:clickable="true"
+	            android:gravity="center_vertical"
+	            android:onClick="funLayoutClick"
+	            android:tag="2"
+	        	android:background="@drawable/layoutitembackground" >
+
+	            <TextView
+	                android:id="@+id/tvEditpass2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000"
+	                android:textSize="16sp"
+	                android:paddingTop="10dp"
+	                android:paddingLeft="5dp"
+	                android:text="@string/string_query_my_day"/>
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#999999"
+	                android:layout_below="@id/tvEditpass2"
+	                android:paddingTop="5dp"
+	                android:paddingLeft="5dp"
+	                android:text="@string/string_query_my_day_hint"/>
+	            
+	            <ImageView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_alignParentRight="true"
+	                android:contentDescription="@string/string_simba_logo"
+	                android:src="@drawable/go11"/>
+	        </RelativeLayout>
+	        
+	        <RelativeLayout
+	            android:id="@+id/main_fun_button4"
+	            android:layout_width="match_parent"
+	            android:layout_height="63dp"
+	            android:clickable="true"
+	            android:gravity="center_vertical"
+	            android:onClick="funLayoutClick"
+	            android:tag="3"
+	        	android:background="@drawable/layoutitembackground" >
+
+	            <TextView
+	                android:id="@+id/tvEditpass4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000"
+	                android:textSize="16sp"
+	                android:paddingTop="10dp"
+	                android:paddingLeft="5dp"
+	                android:text="@string/string_query_all_day"/>
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#999999"
+	                android:layout_below="@id/tvEditpass4"
+	                android:paddingTop="5dp"
+	                android:paddingLeft="5dp"
+	                android:text="@string/string_query_all_day_hint"/>
+	            
+	            <ImageView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_alignParentRight="true"
+	                android:contentDescription="@string/string_simba_logo"
+	                android:src="@drawable/go11"/>
+	        </RelativeLayout>
+	        
+	        <RelativeLayout
+	            android:id="@+id/main_fun_button6"
+	            android:layout_width="match_parent"
+	            android:gravity="center_vertical"
+	            android:layout_height="63dp"
+	            android:clickable="true"
+	            android:tag="4"
+	            android:onClick="funLayoutClick"
+	        	android:background="@drawable/layoutitembackground" >
+	            <TextView
+	                android:id="@+id/tvEditpass6"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000"
+	                android:textSize="16sp"
+	                android:paddingTop="10dp"
+	                android:paddingLeft="5dp"
+	                android:text="@string/string_query_qiandan"/>
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#999999"
+	                android:layout_below="@id/tvEditpass6"
+	                android:paddingTop="5dp"
+	                android:paddingLeft="5dp"
+	                android:text="@string/string_query_qiandan_hint"/>
+	            
+	            <ImageView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_alignParentRight="true"
+	                android:contentDescription="@string/string_simba_logo"
+	                android:src="@drawable/go11"/>
+	        </RelativeLayout>
+	        
+	        <RelativeLayout
+	            android:id="@+id/main_fun_button7"
+	            android:layout_width="match_parent"
+	            android:gravity="center_vertical"
+	            android:layout_height="63dp"
+	            android:clickable="true"
+	            android:tag="5"
+	            android:onClick="funLayoutClick"
+	        	android:background="@drawable/layoutitembackground" >
+	            <TextView
+	                android:id="@+id/tvEditpass7"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000"
+	                android:textSize="16sp"
+	                android:paddingTop="10dp"
+	                android:paddingLeft="5dp"
+	                android:text="@string/string_query_miandan"/>
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#999999"
+	                android:layout_below="@id/tvEditpass7"
+	                android:paddingTop="5dp"
+	                android:paddingLeft="5dp"
+	                android:text="@string/string_query_miandan_hint"/>
+	            
+	            <ImageView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_alignParentRight="true"
+	                android:contentDescription="@string/string_simba_logo"
+	                android:src="@drawable/go11"/>
+	        </RelativeLayout>
+	        
+	        <RelativeLayout
+	            android:id="@+id/main_fun_button8"
+	            android:layout_width="match_parent"
+	            android:gravity="center_vertical"
+	            android:layout_height="63dp"
+	            android:clickable="true"
+	            android:tag="6"
+	            android:onClick="funLayoutClick"
+	        	android:background="@drawable/layoutitembackground" >
+	            <TextView
+	                android:id="@+id/tvEditpass8"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000"
+	                android:textSize="16sp"
+	                android:paddingTop="10dp"
+	                android:paddingLeft="5dp"
+	                android:text="@string/string_query_huiyuan"/>
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#999999"
+	                android:layout_below="@id/tvEditpass8"
+	                android:paddingTop="5dp"
+	                android:paddingLeft="5dp"
+	                android:text="@string/string_query_huiyuan_hint"/>
+	            
+	            <ImageView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_alignParentRight="true"
+	                android:contentDescription="@string/string_simba_logo"
+	                android:src="@drawable/go11"/>
+	        </RelativeLayout>
+	        
+	        <RelativeLayout
+	            android:id="@+id/main_fun_button9"
+	            android:layout_width="match_parent"
+	            android:gravity="center_vertical"
+	            android:layout_height="63dp"
+	            android:clickable="true"
+	            android:tag="7"
+	            android:onClick="funLayoutClick"
+	        	android:background="@drawable/layoutitembackground" >
+	            <TextView
+	                android:id="@+id/tvEditpass9"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000"
+	                android:textSize="16sp"
+	                android:paddingTop="10dp"
+	                android:paddingLeft="5dp"
+	                android:text="@string/string_query_pay"/>
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#999999"
+	                android:layout_below="@id/tvEditpass9"
+	                android:paddingTop="5dp"
+	                android:paddingLeft="5dp"
+	                android:text="@string/string_query_pay_hint"/>
+	            
+	            <ImageView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_alignParentRight="true"
+	                android:contentDescription="@string/string_simba_logo"
+	                android:src="@drawable/go11"/>
+	        </RelativeLayout>
+	    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

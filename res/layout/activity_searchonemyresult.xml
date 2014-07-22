@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+    
+	<TextView
+	    android:id="@+id/myresult_status"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="12dp"
+	    android:textSize="16sp"
+	    android:textColor="#000000"
+	    android:text="@string/myresult_searchdate"
+	    android:background="@drawable/layoutbottomshadowbackground" />
+
+    <ListView
+        android:id="@+id/listview_result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.64"
+        android:padding="5dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/myresult_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layouttopborderbackground"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="8dp"
+        android:gravity="right"
+        android:text=""
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+	
+</LinearLayout>

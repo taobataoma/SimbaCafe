@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oldhawk.simbacafe"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="17" />
+	
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/> 
+	   
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/customtitlebar">
+        <activity
+            android:name="com.oldhawk.simbacafe.LoginActivity"
+            android:label="@string/app_name"
+        	android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.oldhawk.simbacafe.MainActivity"
+            android:label="@string/app_name2"
+        	android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity 
+            android:name="com.oldhawk.simbacafe.DianDanActivity"
+            android:label="@string/diandan_label"
+        	android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.oldhawk.simbacafe.SelectMenuActivity"
+            android:label="@string/select_label"
+        	android:screenOrientation="portrait">        	    
+        </activity>
+        
+        <activity 
+            android:name="com.oldhawk.simbacafe.SearchOneMemberActivity"
+            android:label="@string/sonemember_label"
+        	android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="com.oldhawk.simbacafe.MyResultActivity"
+            android:label="@string/myresult_label"
+        	android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="com.oldhawk.simbacafe.SearchOneMyResultActivity"
+            android:label="@string/searchonemyresult_label"
+        	android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="com.oldhawk.simbacafe.AllResultActivity"
+            android:label="@string/allresult_label"
+        	android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="com.oldhawk.simbacafe.QianDanActivity"
+            android:label="@string/qiandan_label"
+        	android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="com.oldhawk.simbacafe.MianDanActivity"
+            android:label="@string/miandan_label"
+        	android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="com.oldhawk.simbacafe.PayTypeActivity"
+            android:label="@string/paytype_label"
+        	android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="com.oldhawk.simbacafe.MemberListActivity"
+            android:label="@string/memberlist_label"
+        	android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="com.oldhawk.simbacafe.YuDingListActivity"
+            android:label="@string/yudinglist_label"
+        	android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="com.oldhawk.simbacafe.TeJiaListActivity"
+            android:label="@string/tejialist_label"
+        	android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="com.oldhawk.simbacafe.SaleListActivity"
+            android:label="@string/salelist_label"
+        	android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="com.oldhawk.simbacafe.ChaDanActivity"
+            android:label="@string/chadan_label"
+        	android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="com.oldhawk.simbacafe.TableStatusActivity"
+            android:label="@string/tablestatus_label"
+        	android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="com.oldhawk.simbacafe.SelectSubActivity"
+            android:label="@string/selectsub_label"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+        	android:name="com.oldhawk.simbacafe.SelectDateActivity"
+        	android:label="@string/selectdate_label"
+        	android:theme="@android:style/Theme.Holo.Light.Dialog"
+        	android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.oldhawk.simbacafe.AlertMsgActivity"
+            android:label="@string/string_alertmsgLabel"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"
+        	android:screenOrientation="portrait" >
+        </activity>
+		
+    </application>
+</manifest>

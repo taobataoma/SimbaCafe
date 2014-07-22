@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="3dp" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layoutbottomborderbackground"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/currusers_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/currusers_input"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/configlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" 
+            android:gravity="center">
+	        <Button
+	            android:id="@+id/select_button_jia"
+	            style="?android:attr/actionButtonStyle"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:background="@drawable/publicbuttonbackground"
+	            android:onClick="AddOneNums"
+	            android:text="@string/string_jiahao"
+	            android:textSize="16sp" />
+	
+	        <TextView
+	            android:id="@+id/select_textview_usernums"
+	            android:layout_width="60dp"
+	            android:layout_height="40dp"
+	            android:background="@drawable/layouttopbottomborderbackground"
+	            android:gravity="center"
+	            android:textColor="#000000"
+	            android:textIsSelectable="false"
+	            android:textSize="16sp"
+	            android:text="" />
+	
+	        <Button
+	            android:id="@+id/select_button_jian"
+	            style="?android:attr/actionButtonStyle"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:background="@drawable/publicbuttonbackground"
+	            android:onClick="AddOneNums"
+	            android:text="@string/string_jianhao"
+	            android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

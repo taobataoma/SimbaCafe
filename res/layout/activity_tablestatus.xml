@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+    
+	<TextView
+	    android:id="@+id/textview_tablestatus"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="12dp"
+	    android:textSize="16sp"
+	    android:textColor="#000000"
+	    android:text="@string/tablestatus_status"
+	    android:background="@drawable/layoutbottomshadowbackground" />
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+
+		<ScrollView
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1"
+		    android:fadingEdge="vertical"
+		    android:scrollbarStyle="outsideOverlay"
+		    android:scrollbars="vertical" >
+
+		    <GridLayout
+		        android:id="@+id/tablestatus_gridlayout"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dp"
+		        android:columnCount="5" >
+
+		    </GridLayout>
+		</ScrollView>
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:background="@drawable/layouttopborderbackground"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+	        
+	        <Button 
+	            android:layout_width="15dp"
+	            android:layout_height="15dp"
+	            style="?android:attr/actionButtonStyle"
+	            android:background="#DDDDDD"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="14sp"
+	            android:layout_marginRight="5dp"
+	            android:layout_marginLeft="3dp"
+	            android:textColor="#000000"
+	            android:text="@string/tablestatus_label_null"/>
+	        <Button 
+	            android:layout_width="15dp"
+	            android:layout_height="15dp"
+	            style="?android:attr/actionButtonStyle"
+	            android:background="#FFCC66"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="14sp"
+	            android:layout_marginRight="5dp"
+	            android:layout_marginLeft="3dp"
+	            android:textColor="#000000"
+	            android:text="@string/tablestatus_label_full"/>
+	        <Button 
+	            android:layout_width="15dp"
+	            android:layout_height="15dp"
+	            style="?android:attr/actionButtonStyle"
+	            android:background="#66CCFF"/>
+	    	 <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="14sp"
+	            android:layout_marginRight="5dp"
+	            android:layout_marginLeft="3dp"
+	            android:textColor="#000000"
+	            android:text="@string/tablestatus_label_order"/>
+	    </LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+	
+	<RadioGroup
+	    android:id="@+id/selectdate_group"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center_horizontal"
+	    android:padding="10dp"
+	    android:background="@drawable/layoutbottomshadowbackground" >
+
+		<RadioButton
+		    android:id="@+id/radioButtonToday"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/selectdate_today"
+		    android:textSize="16sp" />
+		<RadioButton
+		    android:id="@+id/radioButtonSelect"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/selectdate_select"
+		    android:textSize="16sp"
+		    android:layout_marginLeft="20dp" />
+			    
+	</RadioGroup>
+    <LinearLayout
+        android:id="@+id/selectdate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp" >
+		
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:padding="5dp"
+	        android:gravity="center" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/selectdate_from"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+            <TextView
+		        android:id="@+id/selectdate_from"
+		        android:layout_width="160dp"
+		        android:layout_height="33dp"
+		        android:singleLine="true"
+		        android:textSize="16sp"
+		        android:textColor="#000000"
+		        android:padding="5dp"
+		        android:textIsSelectable="false"
+		        android:drawableLeft="@drawable/date"
+		        android:drawablePadding="1dp"
+		        android:background="@drawable/publicedittextbackground" />
+            </LinearLayout>
+		
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:padding="5dp"
+	        android:gravity="center" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/selectdate_to"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+            <TextView
+		        android:id="@+id/selectdate_to"
+		        android:layout_width="160dp"
+		        android:layout_height="33dp"
+		        android:singleLine="true"
+		        android:textSize="16sp"
+		        android:textColor="#000000"
+		        android:padding="5dp"
+		        android:textIsSelectable="false"
+		        android:drawableLeft="@drawable/date"
+		        android:drawablePadding="1dp"
+		        android:background="@drawable/publicedittextbackground" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" 
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/layouttopborderbackground">
+            <Button
+                android:id="@+id/button_ok"
+                style="?android:attr/actionButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:onClick="ButtonClick"
+                android:background="@drawable/publicbuttonbackground"
+                android:drawableLeft="@drawable/commit"
+                android:text="@string/string_button_OK"
+                android:textSize="16sp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="2dp" />
+
+            <Button
+                android:id="@+id/button_cancel"
+                style="?android:attr/actionButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:onClick="ButtonClick"
+                android:background="@drawable/publicbuttonbackground"
+                android:drawableLeft="@drawable/cancel"
+                android:text="@string/string_button_Cancel"
+                android:textSize="16sp"                
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="3dp" />
+    </LinearLayout>
+</LinearLayout>

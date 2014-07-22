@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout_selectmenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/layoutbackground"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:padding="1dp" >
+
+        <LinearLayout
+            android:id="@+id/select_layout_subtype"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:background="@drawable/layoutrightborderbackground"
+            android:gravity="right" >
+            <Button
+                style="?android:attr/actionButtonStyle"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:background="@drawable/menusubtypecheckedbackground"
+                android:text="@string/select_button_ok"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:gravity="fill_vertical|left" />
+
+            <Button
+                style="?android:attr/actionButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/layoutrightborderbackground"
+                android:text="@string/select_button_ok"
+                android:textSize="16sp" />
+
+            <Button
+                style="?android:attr/actionButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/layoutrightborderbackground"
+                android:text="@string/select_button_ok"
+                android:textSize="16sp" />
+            
+        </LinearLayout>
+        <ListView
+            android:id="@+id/select_listview_menulist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_menuno"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+            <EditText
+		        android:id="@+id/select_edittext_menuidx"
+		        android:layout_width="100dp"
+		        android:layout_height="33dp"
+		        android:singleLine="true"
+		        android:textSize="16sp"
+		        android:inputType="number"
+		        android:padding="5dp"
+		        android:drawableRight="@drawable/edit"
+		        android:background="@drawable/publicedittextbackground" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_menuname"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/select_textview_menuname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="false"
+                android:textSize="16sp"
+		        android:padding="5dp"
+		        android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_nums"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/select_button_jia"
+                style="?android:attr/actionButtonStyle"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:background="@drawable/publicbuttonbackground"
+                android:onClick="AddOneNums"
+                android:text="@string/string_jiahao"
+                android:textSize="16sp" />
+            
+            <TextView
+                android:id="@+id/select_textview_menunums"
+                android:layout_width="50dp"
+                android:layout_height="33dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textIsSelectable="false"
+                android:background="@drawable/layouttopbottomborderbackground"
+                android:textColor="#000000" />
+            
+            <Button
+                android:id="@+id/select_button_jian"
+                style="?android:attr/actionButtonStyle"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:background="@drawable/publicbuttonbackground"
+                android:onClick="AddOneNums"
+                android:text="@string/string_jianhao"
+                android:textSize="16sp" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_usertips"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+            <EditText
+		        android:id="@+id/select_edittext_usertips"
+		        android:layout_width="match_parent"
+		        android:layout_height="33dp"
+		        android:singleLine="true"
+		        android:textSize="16sp"
+		        android:inputType="text"
+		        android:padding="5dp"
+		        android:drawableRight="@drawable/edit"
+		        android:background="@drawable/publicedittextbackground" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_add"
+                style="?android:attr/actionButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:onClick="AddMenuItemToFinalList"
+                android:background="@drawable/publicbuttonbackground"
+                android:drawableLeft="@drawable/commit"
+                android:text="@string/select_button_ok"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_commit"
+                style="?android:attr/actionButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:onClick="ResetAllFields"
+                android:background="@drawable/publicbuttonbackground"
+                android:drawableLeft="@drawable/cancel"
+                android:text="@string/select_button_reset"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
